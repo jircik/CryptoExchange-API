@@ -1,4 +1,4 @@
-import { IsString, IsNotEmpty } from 'class-validator';
+import { IsString, IsNotEmpty, Matches } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class GetBestPriceDto {
@@ -8,5 +8,8 @@ export class GetBestPriceDto {
   })
   @IsString()
   @IsNotEmpty()
+  @Matches(/^[a-zA-Z0-9-]+$/, {
+    message: 'coin deve conter apenas letras, números ou hífen',
+  })
   coin: string;
 }
