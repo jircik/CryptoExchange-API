@@ -6,9 +6,12 @@ export class PricingService {
   constructor(private readonly coingeckoService: CoingeckoService) {}
 
   async getBestPrice(coin: string) {
-    const data = await this.coingeckoService.getPrice(coin);
 
-    const coinData = data[coin];
+    const normalizedCoin = coin.toLowerCase().trim();
+
+    const data = await this.coingeckoService.getPrice(normalizedCoin);
+
+    const coinData = data[normalizedCoin];
 
     if (!coinData) {
       throw new NotFoundException(
@@ -17,7 +20,7 @@ export class PricingService {
     }
 
     return {
-      coin,
+      coin: normalizedCoin,
       price: {
         usd: coinData.usd,
         brl: coinData.brl,
