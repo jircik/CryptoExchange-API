@@ -1,8 +1,8 @@
-# 🚀 CryptoExchange V1
+# 🚀 CryptoPrice-API
 
 API backend desenvolvida com **NestJS** para agregação de preços de criptomoedas em tempo real utilizando a API da CoinGecko.
 
-O projeto foi construído com foco em arquitetura limpa, boas práticas de backend e preparação para evolução futura (V2 e V3). Atualmente a aplicação está **100% funcional e em operação**, mas continua em desenvolvimento com melhorias planejadas.
+O projeto foi construído com foco em arquitetura limpa, boas práticas de backend.
 
 ---
 
@@ -15,8 +15,7 @@ Criar uma API profissional capaz de:
 - Tratar erros corretamente
 - Documentar endpoints automaticamente
 - Implementar cache para otimização de performance
-- Servir como base para futuras integrações com múltiplas exchanges
-
+  
 ---
 
 ## ⚙️ Tecnologias Utilizadas
@@ -34,12 +33,11 @@ Criar uma API profissional capaz de:
 ## 🌎 Integração Externa
 
 - API da CoinGecko  
-- Requisição em tempo real  
-- Uso de API Key via `.env`  
-
+- Requisição em tempo real
+  
 ---
 
-## 🔥 Funcionalidades Implementadas (V1)
+## 🔥 Funcionalidades Implementadas
 
 ✅ Consulta de preço em USD e BRL  
 ✅ Validação de entrada com Regex  
@@ -70,36 +68,6 @@ Criar uma API profissional capaz de:
   "timestamp": "2026-02-22T21:15:36.554Z"
 }
 ```
---- 
-
-## 🚀 Roadmap Futuro
-
-🔹 V2 — Múltiplas Exchanges
-
-Integração com Binance
-
-Integração com Coinbase
-
-Integração com Kraken
-
-Comparação de preços entre exchanges
-
-Melhor preço consolidado
-
-🔹 V3 — Nível Profissional
-
-Integração com Order Book (bid/ask real)
-
-Cálculo de spread
-
-Consideração de taxas
-
-Sistema de arbitragem
-
-Cache com Redis
-
-WebSocket para atualização em tempo real
-
 --- 
 
 ## 👨‍💻 Autor
